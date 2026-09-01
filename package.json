@@ -1,15 +1,18 @@
 {
-  "name": "biblioteca-backend",
+  "name": "biblioteca-frontend",
+  "private": true,
   "version": "1.0.0",
-  "description": "backend simples para sistema de biblioteca",
-  "main": "servidor.js",
+  "type": "module",
   "scripts": {
-    "start": "node servidor.js",
-    "dev": "node servidor.js"
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "mysql2": "^3.14.3"
-  }
+    "@vitejs/plugin-react": "^5.0.2",
+    "vite": "^7.1.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {}
 }

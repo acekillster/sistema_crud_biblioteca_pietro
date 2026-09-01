@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4f7;
+  color: #222;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.pagina {
+  min-height: 100vh;
+}
+
+.cabecalho {
+  background: #263238;
+  color: white;
+  padding: 24px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho h1 {
+  margin: 0 0 6px;
+  text-transform: lowercase;
+}
+
+.cabecalho p {
+  margin: 0;
+}
+
+.aluno {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 5px;
+}
+
+.menu {
+  padding: 14px 7%;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu button {
+  margin-right: 10px;
+  border: none;
+  background: transparent;
+  padding: 10px 4px;
+  color: #263238;
+}
+
+main {
+  width: 86%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.tituloArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tituloArea h2,
+.cartao h2 {
+  margin-top: 0;
+}
+
+.tituloArea p {
+  margin-top: 5px;
+  color: #666;
+}
+
+.botaoPrincipal {
+  background: #263238;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mensagem {
+  width: 86%;
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding: 12px;
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  border-radius: 5px;
+}
+
+.tabelaArea {
+  background: white;
+  border-radius: 7px;
+  overflow-x: auto;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background: #eceff1;
+}
+
+.acoes {
+  white-space: nowrap;
+}
+
+.acoes button {
+  border: none;
+  background: transparent;
+  margin-right: 8px;
+  color: #263238;
+}
+
+.acoes .botaoExcluir {
+  color: #b71c1c;
+}
+
+.paginacao {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.paginacao button,
+.linhaBotoes button {
+  padding: 9px 15px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 5px;
+}
+
+.paginacao button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.cartao {
+  background: white;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 28px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.linhaBotoes button {
+  padding: 9px 15px;
+  border: 1px solid #ccc;
+  background: white;
+  color: #222;
+  border-radius: 5px;
+}
+
+.linhaBotoes .botaoPrincipal {
+  background: #263238;
+  color: white;
+  border: none;
+}
+
+.detalhes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detalheItem {
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.aviso {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+}
+
+@media (max-width: 700px) {
+  .cabecalho {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .aluno {
+    text-align: left;
+  }
+
+  .tituloArea {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  main {
+    width: 92%;
+  }
+
+  .mensagem {
+    width: 92%;
+  }
+}
