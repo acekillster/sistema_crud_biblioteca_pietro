@@ -118,3 +118,5 @@ delete /livros/id
 
 
 o arquivo banco.sql deve ser mantido dentro da pasta backend
+
+https://github.com/acekillster/sistema_crud_biblioteca_pietro
